@@ -15,6 +15,7 @@ nav_order: 2
 
 <div class="publications">
 
-{% bibliography %}
+    {% bibliography %}
+    <p class="text-muted small mt-2">* Equal contribution, † Corresponding author</p>
 
 </div>

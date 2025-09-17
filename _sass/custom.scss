@@ -1,0 +1,104 @@
+// -----------------------------------------------------------------------------
+// -- Custom Styles for Yuting's Website --
+// -----------------------------------------------------------------------------
+
+@use "sass:color";
+@import "variables";
+
+// --- 规则1：让简介正文中的加粗文字变粉色 ---
+.post-content strong {
+  color: $my-soft-pink-highlight;
+}
+
+// --- 规则2：让“研究兴趣”列表水平排列并美化 ---
+.horizontal-list {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+  }
+
+  li {
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 5px 12px;
+
+    // ✅ 替换 lighten()，二选一即可：
+    // A) 语义更贴近“加亮 20%”的线性调整
+    border: 1px solid #{color.adjust($my-very-dark-stroke, $lightness: 20%)};
+
+    // B) 或者用感知比例缩放（更“温和”）
+    // border: 1px solid #{color.scale($my-very-dark-stroke, $lightness: 22.6%)};
+
+    border-radius: 15px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: $my-soft-pink-highlight;
+      color: $my-dark-blue-bg;
+      border-color: $my-soft-pink-highlight;
+    }
+  }
+}
+
+// --- 规则3：more_info 颜色 ---
+.profile .more-info p {
+  color: $my-light-lavender-info !important;
+}
+
+// --- 规则4：让 about 页面的左右两栏顶部对齐 (最终版) ---
+// 使用更具体的选择器来提升优先级，确保我们的规则能够生效
+.page-content > .row:has(.profile) {
+  align-items: flex-start;
+}
+
+// --- 规则5：增加 "Research Interests" 和 "News" 之间的间距 ---
+.horizontal-list {
+  margin-bottom: 4rem; // 1rem 大约是一个标准行高，这里增加了3个行高的下边距
+}
+
+// --- 规则6：修正 "News" 板块的表格布局 (最终版) ---
+.news {
+  table {
+    border-collapse: separate; // 允许我们设置单元格间距
+    border-spacing: 0 1rem;  // 水平间距为0，垂直间距为1个行高
+
+    // 针对日期那一列 (td.date)
+    td.date {
+      width: 140px;
+      min-width: 140px;
+      padding-right: 1.5rem;
+      vertical-align: top;
+      // 新增：调淡日期的颜色，让它不那么抢眼
+      // 它会自动适应明暗模式
+      color: var(--global-text-color-light); 
+    }
+
+    // 新增：针对新闻内容那一列
+    // 选择紧跟在 td.date 后面的那个 td 元素
+    td.date + td {
+      vertical-align: top; // 确保内容也顶部对齐
+    }
+  }
+}
+
+// --- 规则7：自定义导航栏背景，区分 Header 和内容区 ---
+
+// --- 浅色模式下的导航栏样式 ---
+.navbar {
+  // 我们不改变背景色（保持白色），只在底部加一条细微的分割线来区分区域
+  border-bottom: 1px solid var(--global-divider-color);
+  // transition-timing-function: ease-in-out;
+}
+
+// --- 深色模式下的导航栏样式 ---
+[data-theme="dark"] .navbar {
+  // 背景色使用比主背景更深、但比“线条”色稍亮的颜色，营造层次感
+  background-color: #{color.adjust($my-very-dark-stroke, $lightness: 5%)};
+  // 同样添加一条分割线
+  border-bottom: 1px solid #{$my-very-dark-stroke};
+}

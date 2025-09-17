@@ -1,80 +1,80 @@
-// /*******************************************************************************
-//  * Themes
-//  ******************************************************************************/
+/*******************************************************************************
+ * Themes
+ ******************************************************************************/
 
-// @use "sass:color";
+@use "sass:color";
 
-// :root {
-//   color-scheme: light;
-//   --global-bg-color: #{$white-color};
-//   --global-code-bg-color: #{$code-bg-color-light};
-//   --global-text-color: #{$black-color};
-//   --global-text-color-light: #{$grey-color};
-//   --global-theme-color: #{$purple-color};
-//   --global-hover-color: #{$purple-color};
-//   --global-hover-text-color: #{$white-color};
-//   --global-footer-bg-color: #{$grey-color-dark};
-//   --global-footer-text-color: #{$grey-color-light};
-//   --global-footer-link-color: #{$white-color};
-//   --global-distill-app-color: #{$grey-color};
-//   --global-divider-color: rgba(0, 0, 0, 0.1);
-//   --global-card-bg-color: #{$white-color};
-//   --global-highlight-color: #{$red-color-dark};
-//   --global-back-to-top-bg-color: rgba(
-//     #{color.channel($black-color, "red", $space: rgb)},
-//     #{color.channel($black-color, "green", $space: rgb)},
-//     #{color.channel($black-color, "blue", $space: rgb)},
-//     0.4
-//   );
-//   --global-back-to-top-text-color: #{$white-color};
-//   --global-newsletter-bg-color: #{$white-color};
-//   --global-newsletter-text-color: #{$black-color};
+:root {
+  color-scheme: light;
+  --global-bg-color: #{$white-color};
+  --global-code-bg-color: #{$code-bg-color-light};
+  --global-text-color: #{$black-color};
+  --global-text-color-light: #{$grey-color};
+  --global-theme-color: #{$purple-color};
+  --global-hover-color: #{$purple-color};
+  --global-hover-text-color: #{$white-color};
+  --global-footer-bg-color: #{$grey-color-dark};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$white-color};
+  --global-distill-app-color: #{$grey-color};
+  --global-divider-color: rgba(0, 0, 0, 0.1);
+  --global-card-bg-color: #{$white-color};
+  --global-highlight-color: #{$red-color-dark};
+  --global-back-to-top-bg-color: rgba(
+    #{color.channel($black-color, "red", $space: rgb)},
+    #{color.channel($black-color, "green", $space: rgb)},
+    #{color.channel($black-color, "blue", $space: rgb)},
+    0.4
+  );
+  --global-back-to-top-text-color: #{$white-color};
+  --global-newsletter-bg-color: #{$white-color};
+  --global-newsletter-text-color: #{$black-color};
 
-//   --global-tip-block: #42b983;
-//   --global-tip-block-bg: #e2f5ec;
-//   --global-tip-block-text: #215d42;
-//   --global-tip-block-title: #359469;
-//   --global-warning-block: #e7c000;
-//   --global-warning-block-bg: #fff8d8;
-//   --global-warning-block-text: #6b5900;
-//   --global-warning-block-title: #b29400;
-//   --global-danger-block: #c00;
-//   --global-danger-block-bg: #ffe0e0;
-//   --global-danger-block-text: #600;
-//   --global-danger-block-title: #c00;
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
 
-//   #light-toggle-system {
-//     padding-left: 10px;
-//     padding-top: 12px;
-//     display: block;
-//   }
+  #light-toggle-system {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
 
-//   #light-toggle-dark {
-//     display: none;
-//   }
+  #light-toggle-dark {
+    display: none;
+  }
 
-//   #light-toggle-light {
-//     display: none;
-//   }
+  #light-toggle-light {
+    display: none;
+  }
 
-//   .only-light {
-//     display: block;
-//   }
+  .only-light {
+    display: block;
+  }
 
-//   .only-dark {
-//     display: none;
-//   }
+  .only-dark {
+    display: none;
+  }
 
-//   #back-to-top {
-//     color: var(--global-back-to-top-text-color);
-//     background: var(--global-back-to-top-bg-color);
-//     bottom: $back-to-top-bottom;
-//     right: $back-to-top-right;
-//     height: $back-to-top-height;
-//     width: $back-to-top-width;
-//     z-index: $back-to-top-z-index;
-//   }
-// }
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+    bottom: $back-to-top-bottom;
+    right: $back-to-top-right;
+    height: $back-to-top-height;
+    width: $back-to-top-width;
+    z-index: $back-to-top-z-index;
+  }
+}
 
 // html[data-theme="dark"] {
 //   color-scheme: dark;
@@ -123,131 +123,86 @@
 //   }
 // }
 
-// html[data-theme-setting="dark"] {
-//   #light-toggle-system {
-//     display: none;
-//   }
+html[data-theme="dark"] {
+  color-scheme: dark;
 
-//   #light-toggle-dark {
-//     padding-left: 10px;
-//     padding-top: 12px;
-//     display: block;
-//   }
+  /* === 基础底色与文字 === */
+  --global-bg-color: #232946;             /* Background */
+  --global-code-bg-color: #{$code-bg-color-dark}; /* = #121629, from variables.scss */
+  --global-text-color: #fffffe;           /* Paragraph / Main */
+  --global-text-color-light: #fffffe;     /* Secondary / Headline */
 
-//   #light-toggle-light {
-//     display: none;
-//   }
+  /* === 主题色（链接、按钮背景、强调）=== */
+  --global-theme-color: #eebbc3;          /* Highlight / Button Background */
+  --global-hover-color: #eebbc3;          /* Hover color same as theme color */
+  --global-hover-text-color: #232946;     /* Button text */
 
-//   #back-to-top {
-//     color: var(--global-back-to-top-text-color);
-//     background: var(--global-back-to-top-bg-color);
-//   }
-// }
+  /* === 卡片、分割线、Footer === */
+  --global-card-bg-color: #121629;        /* Card background uses Stroke color */
+  --global-divider-color: #2a2f4a;        /* Divider with an intermediate color */
+  --global-footer-bg-color: #b8c1ec;      /* High-contrast footer */
+  --global-footer-text-color: #232946;    /* Dark text on footer */
+  --global-footer-link-color: #232946;    /* Dark links on footer */
 
-// html[data-theme-setting="light"] {
-//   #light-toggle-system {
-//     display: none;
-//   }
+  /* === 其它组件 === */
+  --global-distill-app-color: #b8c1ec;
+  --global-back-to-top-bg-color: rgba(255, 255, 254, 0.5);
+  --global-back-to-top-text-color: #232946;
+  --global-newsletter-bg-color: #b8c1ec;
+  --global-newsletter-text-color: #232946;
 
-//   #light-toggle-dark {
-//     display: none;
-//   }
+  /* --- 提示框颜色等保持默认 --- */
+  --global-tip-block: #42b983;
+  --global-tip-block-bg: #e2f5ec;
+  --global-tip-block-text: #215d42;
+  --global-tip-block-title: #359469;
+  --global-warning-block: #e7c000;
+  --global-warning-block-bg: #fff8d8;
+  --global-warning-block-text: #6b5900;
+  --global-warning-block-title: #b29400;
+  --global-danger-block: #c00;
+  --global-danger-block-bg: #ffe0e0;
+  --global-danger-block-text: #600;
+  --global-danger-block-title: #c00;
 
-//   #light-toggle-light {
-//     padding-left: 10px;
-//     padding-top: 12px;
-//     display: block;
-//   }
-// }
+  /* --- 保持原有切换逻辑 --- */
+  .only-light { display: none; }
+  .only-dark  { display: block; }
+}
 
+html[data-theme-setting="dark"] {
+  #light-toggle-system {
+    display: none;
+  }
 
-/*******************************************************************************
- * Themes - Customized for Yuting's Palette
- ******************************************************************************/
+  #light-toggle-dark {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
 
- @use "sass:color";
+  #light-toggle-light {
+    display: none;
+  }
 
- // --- 默认浅色模式 (Light Mode) ---
- :root {
-   color-scheme: light;
-   // --- 以下是根据你的调色板设计的浅色主题 ---
-   --global-bg-color: #{$white-color};                      // 背景 -> 使用纯白色
-   --global-code-bg-color: #{lighten($my-dark-blue-bg, 75%)}; // 代码块背景 -> 非常浅的蓝色
-   --global-text-color: #{$my-dark-blue-bg};                  // 全局文字 -> 使用你的深蓝色
-   --global-text-color-light: #{lighten($my-dark-blue-bg, 20%)}; // 浅色文字 -> 稍亮的蓝色
-   --global-theme-color: #{$my-soft-pink-highlight};         // 主题色 (链接) -> 沿用你的粉色
-   --global-hover-color: #{$my-soft-pink-highlight};         // 悬停色 -> 沿用你的粉色
-   --global-hover-text-color: #{$my-dark-blue-bg};           // 悬停文字 -> 深蓝色，保持对比
-   --global-footer-bg-color: #{$my-dark-blue-bg};           // 页脚背景 -> 使用深蓝色
-   --global-footer-text-color: #{$my-light-lavender-text};   // 页脚文字 -> 使用淡紫色
-   --global-footer-link-color: #{$white-color};              // 页脚链接 -> 使用白色
-   --global-distill-app-color: #{lighten($my-dark-blue-bg, 20%)};
-   --global-divider-color: rgba(0, 0, 0, 0.1);
-   --global-card-bg-color: #{$white-color};
- 
-   // 提示框颜色等保持默认或进一步定制
-   --global-tip-block: #42b983;
-   --global-tip-block-bg: #e2f5ec;
-   --global-tip-block-text: #215d42;
-   --global-tip-block-title: #359469;
-   --global-warning-block: #e7c000;
-   --global-warning-block-bg: #fff8d8;
-   --global-warning-block-text: #6b5900;
-   --global-warning-block-title: #b29400;
-   --global-danger-block: #c00;
-   --global-danger-block-bg: #ffe0e0;
-   --global-danger-block-text: #600;
-   --global-danger-block-title: #c00;
- 
-   // 以下为功能性代码，保持不变
-   #light-toggle-system {
-     padding-left: 10px;
-     padding-top: 12px;
-     display: block;
-   }
-   #light-toggle-dark, #light-toggle-light { display: none; }
-   .only-light { display: block; }
-   .only-dark { display: none; }
- }
- 
- // --- 深色模式 (Dark Mode) ---
- html[data-theme="dark"] {
-   color-scheme: dark;
-   // --- 以下是直接使用你的调色板的深色主题 ---
-   --global-bg-color: #{$my-dark-blue-bg};
-   --global-code-bg-color: #{lighten($my-dark-blue-bg, 5%)};
-   --global-text-color: #{$my-light-lavender-text};
-   --global-text-color-light: #{$my-light-lavender-text};
-   --global-theme-color: #{$my-soft-pink-highlight};
-   --global-hover-color: #{$my-soft-pink-highlight};
-   --global-hover-text-color: #{$my-dark-blue-bg};
-   --global-footer-bg-color: #{$my-very-dark-stroke};
-   --global-footer-text-color: #{$my-light-lavender-text};
-   --global-footer-link-color: #{$my-bright-white-headline};
-   --global-distill-app-color: #{$my-light-lavender-text};
-   --global-divider-color: #{lighten($my-very-dark-stroke, 10%)};
-   --global-card-bg-color: #{lighten($my-dark-blue-bg, 3%)};
-   .only-light { display: none; }
-   .only-dark { display: block; }
- }
- 
- // --- 控制切换按钮图标显示的功能性代码，保持不变 ---
- html[data-theme-setting="dark"] {
-   #light-toggle-system { display: none; }
-   #light-toggle-dark {
-     padding-left: 10px;
-     padding-top: 12px;
-     display: block;
-   }
-   #light-toggle-light { display: none; }
- }
- 
- html[data-theme-setting="light"] {
-   #light-toggle-system { display: none; }
-   #light-toggle-dark { display: none; }
-   #light-toggle-light {
-     padding-left: 10px;
-     padding-top: 12px;
-     display: block;
-   }
- }
+  #back-to-top {
+    color: var(--global-back-to-top-text-color);
+    background: var(--global-back-to-top-bg-color);
+  }
+}
+
+html[data-theme-setting="light"] {
+  #light-toggle-system {
+    display: none;
+  }
+
+  #light-toggle-dark {
+    display: none;
+  }
+
+  #light-toggle-light {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+  }
+}
