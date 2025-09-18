@@ -23,19 +23,19 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/Yuting-Tan/cv/";
           },
-        },{id: "nav-beyond-research",
-          title: "Beyond Research",
-          description: "A glimpse into the moments that keep me grounded and inspired outside research.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/Yuting-Tan/beyond/";
-          },
         },{id: "nav-teaching",
           title: "teaching",
           description: "Materials for courses you taught. Replace this text with your description.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/Yuting-Tan/teaching/";
+          },
+        },{id: "nav-beyond-research",
+          title: "Beyond Research",
+          description: "A glimpse into the moments that keep me grounded and inspired outside research.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/Yuting-Tan/beyond/";
           },
         },{id: "post-a-post-with-plotly-js",
         
