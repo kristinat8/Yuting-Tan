@@ -24,16 +24,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # 系统依赖：给 jekyll-imagemagick 用
       - name: Install system packages
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick
 
+      # Ruby + Bundler
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.2"
-          bundler: "latest" # 或按上面“方案 B”
+          bundler: "latest"
           bundler-cache: true
 
       - name: Bundle install
@@ -41,6 +43,7 @@ jobs:
           bundle config set path 'vendor/bundle'
           bundle install --without development test --jobs 4 --retry 3
 
+      # Node 依赖（若无 package.json 会跳过）
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
@@ -51,11 +54,25 @@ jobs:
         run: |
           if [ -f package-lock.json ]; then npm ci; elif [ -f package.json ]; then npm i; else echo "No package.json, skip"; fi
 
+      # ✨ 这里新增：给 jekyll-jupyter-notebook 提供 jupyter/nbconvert
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Jupyter for nbconvert
+        run: |
+          python -m pip install --upgrade pip
+          pip install "notebook<7" nbconvert jupyter
+          # 如需将笔记本转 PDF，再加： sudo apt-get install -y pandoc
+
+      # 构建站点
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --trace
 
+      # 上传产物给 Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
