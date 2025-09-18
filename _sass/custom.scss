@@ -65,7 +65,7 @@
 .news {
   table {
     border-collapse: separate; // 允许我们设置单元格间距
-    border-spacing: 0 1rem;  // 水平间距为0，垂直间距为1个行高
+    border-spacing: 0 1rem; // 水平间距为0，垂直间距为1个行高
 
     // 针对日期那一列 (td.date)
     td.date {
@@ -75,7 +75,7 @@
       vertical-align: top;
       // 新增：调淡日期的颜色，让它不那么抢眼
       // 它会自动适应明暗模式
-      color: var(--global-text-color-light); 
+      color: var(--global-text-color-light);
     }
 
     // 新增：针对新闻内容那一列

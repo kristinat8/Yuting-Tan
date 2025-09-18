@@ -1,4 +1,31 @@
 {
+  "name": "al-folio",
+  "version": "0.4.1",
+  "description": "A beautiful, simple, clean, and responsive Jekyll theme for academics",
+  "main": "index.js",
+  "scripts": {
+    "dev": "bundle exec jekyll serve --livereload",
+    "build": "bundle exec jekyll build",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alshedivat/al-folio.git"
+  },
+  "keywords": [
+    "jekyll",
+    "theme",
+    "academic",
+    "portfolio",
+    "blog"
+  ],
+  "author": "Maruan Al-Shedivat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alshedivat/al-folio/issues"
+  },
+  "homepage": "https://github.com/alshedivat/al-folio#readme",
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "1.4.0",
     "prettier": "3.1.1"

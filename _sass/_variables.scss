@@ -51,9 +51,6 @@ $back-to-top-diameter: 40px;
 $back-to-top-height: $back-to-top-diameter;
 $back-to-top-width: $back-to-top-diameter;
 
-
-
-
 // /*******************************************************************************
 //  * Variables used throughout the theme.
 //  * To adjust anything, simply edit the variables below and rebuild the theme.
@@ -79,26 +76,26 @@ $back-to-top-width: $back-to-top-diameter;
 //  $pink-color: #f92080 !default;
 //  $pink-color-light: #ffdddd !default;
 //  $yellow-color: #efcc00 !default;
- 
+
 //  $grey-color: #828282 !default;
 //  $grey-color-light: color.adjust($grey-color, $lightness: 40%);
 //  $grey-color-dark: #1c1c1d;
 //  $grey-900: #212529;
- 
+
 //  $white-color: #ffffff !default;
 //  $black-color: #000000 !default;
- 
+
 //  // Theme colors
- 
+
 //  $code-bg-color-light: rgba($purple-color, 0.05);
 //  $code-bg-color-dark: #2c3237 !default;
- 
+
 //  // Font awesome location
 //  $fa-font-path: "../webfonts";
- 
+
 //  // Tabler icons location
 //  $ti-font-path: "../fonts";
- 
+
 //  // Back To Top button config
 //  $back-to-top-z-index: 10;
 //  $back-to-top-bottom: 30px;
@@ -106,12 +103,12 @@ $back-to-top-width: $back-to-top-diameter;
 //  $back-to-top-diameter: 40px;
 //  $back-to-top-height: $back-to-top-diameter;
 //  $back-to-top-width: $back-to-top-diameter;
- 
+
 // --- My Custom Theme Colors (Yuting's Palette) ---
-$my-dark-blue-bg: #232946;          // 背景色 (Background)
-$my-bright-white-text: #fffffe;      // 正文文字颜色 (Main Paragraph Text)
-$my-light-lavender-info: #b8c1ec;     // more_info 区域文字颜色
-$my-soft-pink-highlight: #eebbc3;      // 高亮/链接/按钮颜色 (Highlight / Button)
-$my-very-dark-stroke: #121629;         // 边框/线条颜色 (Stroke)
-$my-dark-blue-button-text: #232946;    // 按钮文字颜色
-$white-color: #ffffff;                 // 纯白色，方便浅色模式使用
+$my-dark-blue-bg: #232946; // 背景色 (Background)
+$my-bright-white-text: #fffffe; // 正文文字颜色 (Main Paragraph Text)
+$my-light-lavender-info: #b8c1ec; // more_info 区域文字颜色
+$my-soft-pink-highlight: #eebbc3; // 高亮/链接/按钮颜色 (Highlight / Button)
+$my-very-dark-stroke: #121629; // 边框/线条颜色 (Stroke)
+$my-dark-blue-button-text: #232946; // 按钮文字颜色
+$white-color: #ffffff; // 纯白色，方便浅色模式使用

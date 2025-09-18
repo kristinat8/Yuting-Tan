@@ -127,22 +127,22 @@ html[data-theme="dark"] {
   color-scheme: dark;
 
   /* === 基础底色与文字 === */
-  --global-bg-color: #232946;             /* Background */
+  --global-bg-color: #232946; /* Background */
   --global-code-bg-color: #{$code-bg-color-dark}; /* = #121629, from variables.scss */
-  --global-text-color: #fffffe;           /* Paragraph / Main */
-  --global-text-color-light: #fffffe;     /* Secondary / Headline */
+  --global-text-color: #fffffe; /* Paragraph / Main */
+  --global-text-color-light: #fffffe; /* Secondary / Headline */
 
   /* === 主题色（链接、按钮背景、强调）=== */
-  --global-theme-color: #eebbc3;          /* Highlight / Button Background */
-  --global-hover-color: #eebbc3;          /* Hover color same as theme color */
-  --global-hover-text-color: #232946;     /* Button text */
+  --global-theme-color: #eebbc3; /* Highlight / Button Background */
+  --global-hover-color: #eebbc3; /* Hover color same as theme color */
+  --global-hover-text-color: #232946; /* Button text */
 
   /* === 卡片、分割线、Footer === */
-  --global-card-bg-color: #121629;        /* Card background uses Stroke color */
-  --global-divider-color: #2a2f4a;        /* Divider with an intermediate color */
-  --global-footer-bg-color: #b8c1ec;      /* High-contrast footer */
-  --global-footer-text-color: #232946;    /* Dark text on footer */
-  --global-footer-link-color: #232946;    /* Dark links on footer */
+  --global-card-bg-color: #121629; /* Card background uses Stroke color */
+  --global-divider-color: #2a2f4a; /* Divider with an intermediate color */
+  --global-footer-bg-color: #b8c1ec; /* High-contrast footer */
+  --global-footer-text-color: #232946; /* Dark text on footer */
+  --global-footer-link-color: #232946; /* Dark links on footer */
 
   /* === 其它组件 === */
   --global-distill-app-color: #b8c1ec;
@@ -166,8 +166,12 @@ html[data-theme="dark"] {
   --global-danger-block-title: #c00;
 
   /* --- 保持原有切换逻辑 --- */
-  .only-light { display: none; }
-  .only-dark  { display: block; }
+  .only-light {
+    display: none;
+  }
+  .only-dark {
+    display: block;
+  }
 }
 
 html[data-theme-setting="dark"] {

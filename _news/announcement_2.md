@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-🎉 Our paper [*FTMixer: Frequency and Time Domain Representations Fusion for Time Series Forecasting*](https://ieeexplore.ieee.org/document/11106197) was **accepted** for publication as a Letter in *IEEE Signal Processing Letters*.  
+🎉 Our paper [_FTMixer: Frequency and Time Domain Representations Fusion for Time Series Forecasting_](https://ieeexplore.ieee.org/document/11106197) was **accepted** for publication as a Letter in _IEEE Signal Processing Letters_.
 
 <!-- Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
 

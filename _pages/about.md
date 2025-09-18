@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-subtitle:  M.S. Student @ <a href='https://en.cuc.edu.cn/'> CUC </a>  |  AI for Creativity  |  Seeking a Ph.D. Position
+subtitle: M.S. Student @ <a href='https://en.cuc.edu.cn/'> CUC </a>  |  AI for Creativity  |  Seeking a Ph.D. Position
 
 profile:
   align: right

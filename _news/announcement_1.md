@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-✍️ Our paper [*PsyMem: Fine-grained psychological alignment and Explicit Memory Control for Advanced Role-Playing LLMs*](https://arxiv.org/abs/2505.12814) received **major revision** at *TACL* — currently preparing the revision.  
+✍️ Our paper [_PsyMem: Fine-grained psychological alignment and Explicit Memory Control for Advanced Role-Playing LLMs_](https://arxiv.org/abs/2505.12814) received **major revision** at _TACL_ — currently preparing the revision.
