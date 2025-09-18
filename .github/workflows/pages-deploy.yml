@@ -2,8 +2,8 @@ name: Deploy site to GitHub Pages
 
 on:
   push:
-    branches: ["main"]         # 你的默认分支是 main
-  workflow_dispatch:            # 允许手动触发
+    branches: ["main"] # 你的默认分支是 main
+  workflow_dispatch: # 允许手动触发
 
 permissions:
   contents: read
