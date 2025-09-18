@@ -2,8 +2,8 @@ name: Deploy site to GitHub Pages
 
 on:
   push:
-    branches: ["main"] # 你的默认分支是 main
-  workflow_dispatch: # 允许手动触发
+    branches: ["main"]            # 如果默认分支不是 main 请改
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,19 +21,31 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
+      # 用你项目自己的 Gemfile/插件版本来构建（兼容 al-folio）
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          source: ./
-          destination: ./_site
+          ruby-version: "3.1"      # 3.1/3.2 都可；和 al-folio 兼容即可
+          bundler-cache: true
 
+      # 安装依赖（根据 Gemfile）
+      - name: Bundle install
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install --without development test --jobs 4 --retry 3
+
+      # 生成网站（重要：用 bundle 执行）
+      - name: Build with Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --trace
+
+      # 把 _site 上传给 Pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./_site
+          path: _site
 
   deploy:
     environment:
