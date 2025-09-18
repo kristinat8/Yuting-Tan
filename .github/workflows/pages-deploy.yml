@@ -21,14 +21,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # ✅ 关键：配置 GitHub Pages 环境
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
+      - name: Install system packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1"
+          ruby-version: "3.2"
+          bundler: "latest" # 或按上面“方案 B”
           bundler-cache: true
 
       - name: Bundle install
@@ -36,11 +41,20 @@ jobs:
           bundle config set path 'vendor/bundle'
           bundle install --without development test --jobs 4 --retry 3
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install JS deps (if any)
+        run: |
+          if [ -f package-lock.json ]; then npm ci; elif [ -f package.json ]; then npm i; else echo "No package.json, skip"; fi
+
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build --trace
+        run: bundle exec jekyll build --trace
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
