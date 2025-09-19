@@ -1,0 +1,40 @@
+
+life_moments:
+  - src: /assets/img/beyond_research/kid.JPG
+    caption: "The starting point of my academic career (probably)."
+    
+  - src: /assets/img/beyond_research/tennis.jpg
+    caption: "My backhand is a work in progress, but the chase is always fun."
+
+# Campus Animals Section
+campus_animals:
+  - src: /assets/img/beyond_research/cats.JPG
+    caption: "The usual dinner guests on campus."
+    
+  - src: /assets/img/beyond_research/little_milk.JPG
+    caption: "A curious friend named 'Niú Nǎi' (Milk) inspecting my camera lens."
+    
+  - src: /assets/img/beyond_research/little_potato.JPG
+    caption: "Tǔ Dòu (Potato) signaling with his eyes: 'Is it snack time yet?'"
+    
+  - src: /assets/img/beyond_research/friends.JPG
+    caption: "The campus night watch partners: 'Niú Nǎi' (Milk) and 'Tǔ Dòu' (Potato). Making their rounds together again tonight."
+    
+  - src: /assets/img/beyond_research/carl.JPG       
+    caption: "Met this spiky little neighbor during a late-night walk."
+    
+  - src: /assets/img/beyond_research/dacong_special.png
+    caption: "Ran into my dream dog: a Bernese Mountain Dog! His name is pretty fun, too—'Dà Cōng' (Scallion)."
+    
+  - src: /assets/img/beyond_research/dacong.png
+    caption: "Trying to befriend Dà Cōng with a funny face. I don't think he minded—in fact, he might have secretly enjoyed it."
+# Books Section
+books:
+  - title: "The Neapolitan Novels"
+    author: "Elena Ferrante"
+    cover: /assets/img/beyond_research/The_Neapolitan_Novels.jpg 
+    note: "The 'My Brilliant Friend' series. An incredibly powerful and immersive story about the complexities of female friendship and identity."
+  - title: "The Innocent Anthropologist"
+    author: "Nigel Barley"
+    cover: /assets/img/beyond_research/InnocentFrontCover.webp 
+    note: "A witty and insightful look at anthropological fieldwork that highlights the importance of perspective and humor in research."

@@ -51,3 +51,13 @@ body.sticky-bottom-footer {
 *****************************************************************************/
 
 // TODO: redefine projects layout.
+
+
+// --- Custom Styles for Beyond Research Page ---
+
+// This targets the cards on your "Beyond" page specifically
+.br-card .card-img-top {
+  height: 300px;          // 设置一个固定的图片高度，您可以根据喜好调整这个数值
+  width: 100%;            // 宽度自动填满卡片
+  object-fit: cover;      // 这是关键！保持图片比例，自动裁剪多余部分
+}
