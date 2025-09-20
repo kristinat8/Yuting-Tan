@@ -1,6 +1,6 @@
 life_moments:
-  - src: /assets/img/beyond_research/kid.JPG
-    caption: "The starting point of my academic career (probably)."
+  # - src: /assets/img/beyond_research/kid.JPG
+  #   caption: "The starting point of my academic career (probably)."
 
   - src: /assets/img/beyond_research/tennis.jpg
     caption: "My backhand is a work in progress, but the chase is always fun."
