@@ -25,7 +25,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Yuting Tan** is a third-year Master’s student in _Computer Science_ at the Communication University of China, advised by [**Dr. Yunxiao Qin**](https://qyxqyx.github.io/homepage/) and [**Dr. Jingjing Zhang**](https://ccs.cuc.edu.cn/2021/0302/c6238a178420/page.htm). Her research focuses on developing unified representations for **visual–linguistic grounding**, with the goal of enabling embodied AI to understand and interact with the open world. She has led projects including **EgoViT**, a self-supervised framework for learning object-centric representations from egocentric video, and **PsyMem**, a psychologically-aligned language model designed for human-like role-playing.
+Yuting Tan is a third-year Master’s student in Computer Science at <a href='https://en.cuc.edu.cn/'> the Communication University of China </a>, advised by <a href='https://qyxqyx.github.io/homepage/'> Dr. Yunxiao Qin </a> and <a href='https://ccs.cuc.edu.cn/2021/0302/c6238a178420/page.htm'> Dr. Jingjing Zhang </a>. Her research focuses on developing unified representations for visual–linguistic grounding, with the goal of enabling embodied AI to understand and interact with the open world.
+
+She has led projects including <a> EgoViT </a>, a self-supervised framework for learning object-centric representations from egocentric video, and <a href='https://arxiv.org/abs/2505.12814'> PsyMem </a>, a psychologically-aligned language model designed for human-like role-playing.
 
 <div class="horizontal-list" markdown="1">
 ### Research Interests
