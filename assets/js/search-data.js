@@ -39,6 +39,9 @@ ninja.data = [{
           section: "News",},{id: "news-our-paper-psymem-fine-grained-psychological-alignment-and-explicit-memory-control-for-advanced-role-playing-llms-was-accepted-for-publication-in-transactions-of-the-association-for-computational-linguistics-tacl",
           title: '🎉 Our paper PsyMem: Fine-grained psychological alignment and Explicit Memory Control for Advanced...',
           description: "",
+          section: "News",},{id: "news-excited-to-share-that-our-paper-towards-stable-self-supervised-object-representations-in-unconstrained-egocentric-video-has-been-accepted-to-cvpr",
+          title: '🎉 Excited to share that our paper [Towards Stable Self-Supervised Object Representations in...',
+          description: "",
           section: "News",},{
       id: 'light-theme',
       title: 'Change theme to light',
