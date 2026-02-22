@@ -40,7 +40,7 @@ ninja.data = [{
           title: '🎉 Our paper PsyMem: Fine-grained psychological alignment and Explicit Memory Control for Advanced...',
           description: "",
           section: "News",},{id: "news-excited-to-share-that-our-paper-towards-stable-self-supervised-object-representations-in-unconstrained-egocentric-video-has-been-accepted-to-cvpr",
-          title: '🎉 Excited to share that our paper [Towards Stable Self-Supervised Object Representations in...',
+          title: '🎉 Excited to share that our paper Towards Stable Self-Supervised Object Representations in...',
           description: "",
           section: "News",},{
       id: 'light-theme',
